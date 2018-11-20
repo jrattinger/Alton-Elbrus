@@ -1,0 +1,17 @@
+.facets-item-cell-grid {
+    .facets-item-cell-grid-details {
+        padding: 0;
+        .facets-item-cell-grid-title {
+            font-size: 14px;
+            margin: $sc-base-margin 0;
+            max-width: 85%;
+        }
+
+        .product-views-price-lead {
+            font-size: 14px;
+        }
+    }
+    .facets-item-cell-grid-image {
+        width: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+.giftcertificate-list-header {
+    @extend .list-header;
+    position: relative;
+    margin-bottom: $sc-base-margin * 3;
+    display: inline-block;
+    width: 100%;
+}
+.giftcertificate-list-title {
+    @extend .list-header-title;
+    float:none;
+    @media (min-width: $screen-sm-min) {
+        float: left;
+    }
+}
+.giftcertificate-list-results-container
+{
+    @media (min-width: $screen-sm-min) {
+        .giftcertificate-list-results-table-header-giftcode {
+            width: 20%;
+        }
+        .giftcertificate-list-results-table-header-row-email {
+            width: 30%;
+        }
+        .giftcertificate-list-results-table-header-row-remaining {
+            width: 30%;
+        }
+        .giftcertificate-list-results-table-header-row-originalamount {
+            width: 20%;
+        }
+    }
+}
+.giftcertificate-list-results-table {
+    @extend .recordviews-table;
+}
+.giftcertificate-list-results-table-header {
+    @extend .recordviews-row-header;
+    border-top: 1px solid $sc-color-theme-light;
+}

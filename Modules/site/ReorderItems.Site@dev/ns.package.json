@@ -1,0 +1,10 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/ReorderItems@3.0.0/JavaScript/ReorderItems.js": "JavaScript/ReorderItems.js"
+    }
+}

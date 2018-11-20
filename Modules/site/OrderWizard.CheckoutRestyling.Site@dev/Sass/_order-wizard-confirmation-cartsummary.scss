@@ -1,0 +1,76 @@
+.order-wizard-cart-summary-order-info-container {
+    margin: 5px 15px 40px;
+    color: #949ca2;
+    font-size: 14px;
+}
+
+#order-wizard-layout .order-wizard-cart-summary-container {
+    @media (max-width: 991px) {
+        margin-top: 15px;
+    }
+}
+
+.order-wizard-cart-summary-order-info {
+    margin-bottom: 6px;
+}
+
+.order-wizard-confirmation-cart-summary-body {
+    border-top: 1px solid #C4CED3;
+    border-bottom: 1px solid #C4CED3;
+    padding-top: 20px;
+    margin: 0 15px;
+
+    .order-wizard-cart-summary-grid-float {
+        padding-left: 0;
+        span {
+            padding-right: 0;
+        }
+    }
+
+    .order-wizard-cart-summary-total {
+        margin-top: 15px!important;
+    }
+}
+
+.order-wizard-cart-summary-order-address-container{
+    margin: 40px 15px 15px;
+    color: #949ca2;
+    font-size: 14px;
+
+    .address-details {
+        padding: 0;
+        min-height: auto;
+    }
+
+    .address-details-container{
+        p {
+            color: #949ca2;
+            font-size: 14px;
+            margin-bottom: 6px;
+            line-height: normal;
+            b {
+                color: #949ca2;
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .address-details-phone {
+        display: none;
+    }
+
+    .order-wizard-cart-summary-order-address {
+        margin-bottom: 30px;
+    }
+
+    .order-wizard-cart-summary-order-address-header {
+        margin-bottom: 6px;
+    }
+
+    .order-wizard-cart-summary-customer-service-header {
+        font-weight: bold;
+        line-height: normal;
+        margin-bottom: 5px;
+    }
+}

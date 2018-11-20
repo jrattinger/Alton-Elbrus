@@ -1,0 +1,18 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ],
+        "sass": [
+            "Sass/**/*.scss"
+        ],
+        "templates": [
+            "Templates/*.tpl"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/Cart@4.0.0/Templates/cart_detailed.tpl": "Templates/cart_detailed.tpl",
+        "themes/horizon@2.2.0/overrides/Theme_Cart@theme/Templates/qs_cart_summary.tpl": "Templates/qs_cart_summary.tpl",
+        "suitecommerce/Cart@4.0.0/Templates/cart_lines.tpl" : "Templates/cart_lines.tpl"
+    }
+}

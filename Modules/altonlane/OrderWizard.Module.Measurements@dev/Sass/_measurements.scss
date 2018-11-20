@@ -1,0 +1,64 @@
+.measurements-select-body-container {
+    @extend .row;
+}
+
+.measurements-select-container {
+    @extend .col-sm-6;
+    @extend .col-md-6;
+}
+
+.measurements-help-container {
+    @extend .col-sm-6;
+    @extend .col-md-6;
+    height: 250px;
+}
+
+@media(max-width:768px) {
+    .measurements-select-container,
+    .measurements-help-container {
+        width: 100%;
+    }
+}
+
+.measurements-container {
+    margin: 5px;
+}
+
+.measurements-select-info {
+    display: inline-block;
+    width: 95%;
+    vertical-align: top;
+    padding-left: 10px;
+
+    label {
+        line-height: 1.4;
+        color: #68737a;
+    }
+}
+
+.measurements-select-radio {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+}
+
+.measurements-select-instructions-container {
+    margin: 20px 0 40px;
+}
+
+.measurements-select {
+    margin-bottom: 25px;
+}
+
+.measurements-help {
+    height: 100%;
+    margin: 0 10px;
+    border: 1px solid #d2e4ed;
+    padding: 25px;
+    color: #68737a;
+    line-height: 1.4;
+}
+
+.measurements-select-instruction {
+    color: #68737a;
+}

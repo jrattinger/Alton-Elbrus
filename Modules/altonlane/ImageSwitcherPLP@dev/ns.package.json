@@ -1,0 +1,14 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ],
+        "templates": [
+            "Templates/*.tpl"
+        ]
+    },
+    "overrides": {
+        "themes/horizon@2.2.0/overrides/Theme_Facets@theme/Templates/qs_facets_item_cell_grid.tpl": "Templates/facets_item_cell_grid.tpl",
+        "themes/horizon@2.2.0/overrides/Theme_Facets@theme/Templates/qs_facets_item_cell_table.tpl": "Templates/facets_item_cell_table.tpl"
+    }
+}

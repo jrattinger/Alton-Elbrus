@@ -1,0 +1,158 @@
+{
+    "id": "site",
+    "name": "Site QS Temp Placeholder - Horizon Theme",
+    "dependencies": ["qs-b2c","ss-theme-horizon"],
+    "endpoint": "true",
+    "modules": {
+        "altonlane/AdditionalSwatches":"dev",
+        "altonlane/AltonLaneHeader":"dev",
+        "altonlane/AltonLaneFooter":"dev",
+        "altonlane/AltonLaneGlobalViews": "dev",
+        "altonlane/AltonLaneNewsletter":"dev",
+        "altonlane/AltonLaneSocialSharing": "dev",
+        "altonlane/AltonLaneHome":"dev",
+        "altonlane/ApplicationConfigurations.Core": "dev",
+        "altonlane/FacebookPixel": "1.0.0",
+        "altonlane/FacebookPixel.Integration": "1.0.0",
+        "altonlane/MasterFacet": "dev",
+        "altonlane/PriceFormat": "dev",
+        "altonlane/Theme_BaseSassStyles.Site": "dev",
+        "ps/ProductDetails.Extend":"1.0.0",
+        "ps/GoogleTagManager.Fix":"2.0.0-fix",
+        "site/Address.Site": "dev",
+        "site/Balance.Site": "dev",
+        "site/Cart.Site": "dev",
+        "site/Case.Site": "dev",
+        "site/Configuration.Site": "dev",
+        "site/CreditCard.Site": "dev",
+        "site/Font.Site": "dev",
+        "site/Header.Site": "dev",
+        "site/ItemRelations.Site": "dev",
+        "site/MenuTree.Site": "dev",
+        "site/ProductDetails.ItemOptions": "dev",
+        "site/ProductDetails.MetaTagsFix": "dev",
+        "site/ProductDetails.Site": "dev",
+        "site/OrderWizard.CheckoutRestyling.Site": "dev",
+        "site/RecentlyViewedItems.Site": "dev",
+        "site/ReorderItems.Site": "dev",
+        "site/ReturnAuthorization.Site": "dev",
+        "site/ShoppingApplication.Site": "dev",
+        "site/SocialSharing.Site": "dev",
+        "site/Theme_Facets.Site": "dev",
+        "site/Transaction.Line.Views.Site": "dev",
+        "altonlane/OrderWizard.Module.Measurements":"dev",
+        "altonlane/ImageSwitcherPLP": "dev"
+    },
+    "tasksConfig": {
+        "javascript": [
+            {
+                "entryPoint": "SC.Shopping.Starter",
+                "dependencies": [
+                    {"prepend": "Core.Shopping.Configuration"},
+                    "AltonLaneFooter.View",
+                    "Cart.Lines.View.Site",
+                    "ProductViews.Price.View.Site",
+                    "ProductDetails.MetaTagsFix",
+                    "FacebookPixel",
+                    "FacebookPixel.Integration",
+                    "Session.MasterFacet",
+                    "SocialSharing.Plugins.Pinterest.Hover.Site",
+                    "ProductDetails.ItemOptions",
+                    "ProductDetails.Site",
+                    "Facets.ItemCell.Extend",
+                    "Theme_Facets.FacetedNavigation",
+                    "Facets.ItemCell.Extend",
+                    "ItemRelations.RelatedItem.View.Site",
+                    "IntercomChat",
+                    "ProductDetails.Option.Remove",
+                    "Transaction.Line.Views.Options.Selected.View.Site"
+                ]
+            },
+            {
+                "entryPoint": "SC.MyAccount.Starter",
+                "dependencies": [
+                    "AltonLaneFooter.View",
+                    "MenuTree.View.RemoveQuotes",
+                    "Address.Edit.FieldsView.Site",
+                    "CreditCard.Edit.Form.View.Site",
+                    "Transaction.Line.Views.Options.Selected.View.Site",
+                    "ProductDetails.ItemOptions",
+                    "ProductDetails.Site",
+                    "ProductDetails.Option.Remove"
+                    
+                ]
+            },
+            {
+                "entryPoint": "SC.Checkout.Starter",
+                "dependencies": [
+                    "AltonLaneFooter.View",
+                    "FacebookPixel",
+                    "FacebookPixel.Checkout.Integration",
+                    "OrderWizard.CheckoutRestyling",
+                    "Address.Edit.FieldsView.Site",
+                    "CreditCard.Edit.Form.View.Site",
+                    "OrderWizard.Module.Measurements",
+                    "Measurements.Model",
+                    "Measurements.View",
+                    "Transaction.Line.Views.Options.Selected.View.Site"
+                ]
+
+            }
+        ],
+        "ssp-libraries": {
+            "dependencies": [
+                "Measurements.ServiceController",
+                "ProductDetails.ItemOptions.ServiceController"
+            ]
+        },
+        "sass": {
+            "applications": [
+                {
+                    "name": "Shopping",
+                    "dependencies": [
+                        "AltonLaneHeader",
+                        "AltonLaneFooter",
+                        "AltonLaneGlobalViews",
+                        "AltonLaneNewsletter",
+                        "AltonLaneSocialSharing",
+                        "AltonLaneHome",
+                        "Cart.Site",
+                        "Font.Site",
+                        "ItemRelations.Site",
+                        "ProductDetails.ItemOptions",
+                        "ProductDetails.Site",
+                        "RecentlyViewedItems.Site",
+                        "Theme_BaseSassStyles.Site",
+                        "Theme_Facets.Site"
+                    ]
+                },
+                {
+                    "name": "MyAccount",
+                    "dependencies": [
+                        "Address.Site",
+                        "AltonLaneHeader",
+                        "AltonLaneFooter",
+                        "AltonLaneNewsletter",
+                        "CreditCard.Site",
+                        "Font.Site",
+                        "Theme_BaseSassStyles.Site"
+                    ]
+                },
+                {
+                    "name": "Checkout",
+                    "dependencies": [
+                        "Address.Site",
+                        "AltonLaneHeader",
+                        "AltonLaneFooter",
+                        "AltonLaneNewsletter",
+                        "CreditCard.Site",
+                        "Font.Site",
+                        "Theme_BaseSassStyles.Site",
+                        "OrderWizard.CheckoutRestyling.Site",
+                        "OrderWizard.Module.Measurements"
+                    ]
+                }
+            ]
+        }
+    }
+}

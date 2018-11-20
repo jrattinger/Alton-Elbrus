@@ -1,0 +1,43 @@
+.creditcard-edit-form-row {
+    @extend .row;
+}
+
+.creditcard-edit-form-group {
+    @extend .col-md-6;
+    @extend .col-sm-6;
+}
+
+.creditcard-edit-form-input {
+    width: 100%;
+    min-width: auto;
+
+    &.required {
+        border-right: 5px solid darkred;
+        
+        &.not-empty {
+            border-right: 5px solid #394A53;
+        }
+    }
+}
+
+.creditcard-edit-form-label {
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #68737a;
+}
+
+.credit-card-edit-form-inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.creditcard-edit-form-securitycode-group-input {
+    &.required {
+        border-right: 5px solid darkred;
+        
+        &.not-empty {
+            border-right: 5px solid #394A53;
+        }
+    }
+}

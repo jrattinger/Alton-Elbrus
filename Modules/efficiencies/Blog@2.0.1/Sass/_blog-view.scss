@@ -1,0 +1,85 @@
+.blog-main {
+    @extend .container;
+}
+
+.blog-breadcrum {
+    @extend .breadcrumb;
+}
+
+.blog-header {
+    @extend .clearfix;
+    border-bottom: 1px solid $sc-color-theme-border;
+    padding-bottom: $sc-base-margin * 3;
+}
+
+.blog-title {
+    font-size: $sc-h3-font-size;
+    margin-top: 4 * $sc-base-margin;
+    margin-bottom: 3 * $sc-base-margin;
+    font-weight: $sc-font-weight-semibold;
+
+    @media (min-width:$screen-sm-min) {
+        margin-top: 3 * $sc-base-margin;
+        float: left;
+    }
+
+    @media (min-width: $screen-md-min) {
+        margin-top: 2 * $sc-base-margin;
+    }
+}
+
+.blog-title-alt {}
+
+.blog-list-header {
+    @extend .list-header;
+}
+
+.blog-list-header-actions {
+    @extend .list-header-actions;
+}
+
+.facets-facet-browse-list-header-filters {
+    @extend .list-header-filters;
+}
+
+.blog-list-header-filters-wrapper {
+    @extend .list-header-filters-wrapper;
+}
+
+.blog-list-header-filters-row {
+    @extend .list-header-filters-row;
+}
+
+.blog-browse-list-header-filter-column {
+    @extend .list-header-filter-column;
+}
+
+.blog-navigation-main {
+    @extend .col-md-3;
+    @include box-shadow(0 0 6px $sc-color-secondary);
+    padding: 0;
+    background-color: #fff;
+    overflow-x:hidden;
+
+    @media (min-width: $screen-md-min) {
+        overflow:hidden;
+        padding-right: $sc-base-padding * 3;
+        @include box-shadow(none);
+        width: 25%;
+        background-color:transparent;
+    }
+}
+
+.blog-navigation-main[data-pusher="sc-pushable-md"] .sc-pusher-header {
+  margin-left: 0px;
+}
+
+.blog-browse-results {
+    @extend .col-md-9;
+    padding: 0;
+}
+
+.blog-pagination {
+    float: right;
+    margin-bottom: $sc-large-margin;
+}

@@ -1,0 +1,173 @@
+.footer-wrapper {
+  background: #384A53;
+}
+
+.footer-content {
+  width: 100%;
+
+}
+
+.footer-content-container {
+  @extend .row;
+  text-align: center;
+}
+
+.footer-column-heading {
+  color: #C4CED3;
+}
+
+.footer-content-logo {
+  width: 200px;
+  margin-top: 0px;
+}
+
+.footer-content-address-container {
+  .footer-content-address {
+    padding: 0px!important;
+    color: #6E818B;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.footer-column-link {
+  color: #6E818B;
+  font-size: 12px;
+  margin-bottom: 5px;
+  line-height: 12px;
+  display: block;
+
+  &:first-child {
+    margin-top: 5px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: #C4CED3;
+  }
+}
+
+.footer-content-social {
+  @media (min-width: $screen-md-min) {
+    padding-right: 0;
+  }
+  margin: 20px 0;
+}
+
+.footer-content-copyright {
+  font-size: 85%;
+}
+
+.footer-content-newsletter {
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  text-align: left;
+
+  .newsletter-subscription-form-button-subscribe {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+  }
+  .newsletter-subscription-form-container .newsletter-suscription-form-input {
+    color: #6E818B;
+    background: #C4CED3;
+    border: 1px solid #6E818B;
+  }
+
+  .newsletter-subscription-form-label {
+    color: #6E818B!important;
+  }
+}
+
+.footer-content-nav  {
+  width: auto;
+  text-align: left;
+  display: inline-block;
+  float:none;
+  padding-left: 50px;
+
+  @media (max-width: 767px) {
+    padding-left:15px;
+  }
+}
+
+.footer-content-nav-list {
+  width: auto;
+  margin-right: 20px;
+}
+
+.footer-content-social {
+  margin-top: 20px;
+
+  @media (min-width: $screen-md-min) {
+    width: auto;
+    padding: 0;
+  }
+}
+
+.footer-content-social-list {
+
+  li {
+    width: 30px;
+    margin-left: 15px;
+    display:inline-block;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    a {
+      color: #000;
+    }
+  }
+}
+
+.footer-content-nav-list {
+
+  // @media (max-width:$screen-sm-max) {
+  //   width: 50%;
+  // }
+
+  @media (max-width:$screen-xs-max) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer-content-bottom {
+  color: #6E818B;
+}
+
+.footer-content-newsletter-mobile {
+  display: none;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: 992px) {
+    display: block;
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+
+  .footer-content-logo {
+    margin: 0 auto;
+  }
+
+  .newsletter-subscription-form-label {
+    text-align: center;
+  }
+}
+
+.footer-content-newsletter-desktop {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+li.footer-column-heading-listitem {
+  margin: 5px 0;
+}

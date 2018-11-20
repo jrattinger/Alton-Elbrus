@@ -1,0 +1,55 @@
+.order-wizard-shipmethod-module,
+.order-wizard-paymentmethod-selector-module {
+    padding: 0;
+    margin: 0;
+}
+
+.order-wizard-module-toggle-icon {
+    @extend .accordion-toggle-icon;
+    height: auto;
+    line-height: normal;
+}
+
+.order-wizard-module-container {
+    padding: 10px;
+    clear: both;
+    background: #f7fafc;
+}
+
+.order-wizard-module-head {
+    @extend .accordion-head;
+}
+
+.order-wizard-module-head-toggle {
+    @extend .accordion-head-toggle;
+    padding: 0 5px;
+}
+
+.order-wizard-module-body {
+    @extend .accordion-body-alt;
+    padding-top: 10px;
+}
+
+.order-wizard-module-title {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module {
+    margin: 0;
+}
+
+.order-wizard-step-content-main > .module-rendered {
+    margin-bottom: 15px;
+}
+
+.order-wizard-next-icon {
+    @extend .fa;
+    @extend %fa-angle-double-right;
+}
+
+.order-wizard-next-container {
+    text-align: right;
+    padding: 10px;
+    text-transform: uppercase;
+}

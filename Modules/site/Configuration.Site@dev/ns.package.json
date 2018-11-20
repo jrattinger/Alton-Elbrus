@@ -1,0 +1,16 @@
+{
+    "gulp": {
+        "configuration": [
+            "Configuration/**/*.js"
+        ],
+        "javascript": [
+            "JavaScript/**/*.js"
+        ],
+        "ssp-libraries": [
+            "SuiteScript/**/*.js"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/CheckoutApplication@2.3.0/JavaScript/SC.Checkout.Configuration.Steps.OPC.js": "JavaScript/SC.Checkout.Configuration.Steps.OPC.js"
+    }
+}

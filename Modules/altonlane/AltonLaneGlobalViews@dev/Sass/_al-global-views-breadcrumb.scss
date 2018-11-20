@@ -1,0 +1,32 @@
+.global-views-breadcrumb-item-active {
+    @extend .breadcrumb-item-active;
+    margin: auto;
+    color: $sc-theme-color-primary; //$sc-theme-color-tertiary;
+
+    @media (min-width: $screen-xs-min){
+        font-size: 12px; // $sc-h3-font-size;
+        padding:0px $sc-base-padding * 2;
+    }
+}
+
+.global-views-breadcrumb-item a {
+    color: $sc-theme-color-primary;
+}
+
+.global-views-breadcrumb {
+    @extend .breadcrumb;
+    font-size:14px;
+    background-color: $sc-theme-color-body-background; // $sc-theme-color;
+    height: 35px;
+    margin-bottom: 0;
+    display: flex;
+    padding: 0 10px;
+    float: left;
+    bottom: 0;
+    @media (min-width: $screen-xs-min){
+        height: 50px;
+    }
+    @media (min-width: $screen-md-min){
+        position: absolute;
+    }
+}

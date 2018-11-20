@@ -1,0 +1,20 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ],
+        "sass": [
+            "Sass/**/*.scss"
+        ],
+        "templates": [
+            "Templates/*.tpl"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/ProductDetails@1.0.0/JavaScript/ProductDetails.ImageGallery.View.js": "JavaScript/ProductDetails.ImageGallery.View.js",
+        "suitecommerce/ProductDetails@1.0.0/Templates/product_details_image_gallery.tpl": "Templates/product_details_image_gallery.tpl",
+        "themes/horizon@2.2.0/overrides/Theme_ProductDetails@theme/Templates/qs_product_details_full.tpl": "Templates/product_details_full.tpl",
+        "suitecommerce/ProductDetails@1.0.0/Templates/product_details_information.tpl":"Templates/product_details_information.tpl",
+        "themes/horizon@2.2.0/overrides/Theme_ProductDetails@theme/Templates/qs_product_details_quickview.tpl": "Templates/qs_product_details_quickview.tpl"
+    }
+}

@@ -1,0 +1,26 @@
+.giftcertificate-details-hide-label {
+    @media (min-width: $screen-md-min) {
+        display: none;
+    }
+}
+.giftcertificate-details-results-table-row {
+    @extend .recordviews-row;
+}
+.giftcertificate-details-results-table-row:hover {
+    @extend .recordviews-row:hover;
+}
+.giftcertificate-details-results-table-giftcode-label {
+    @extend .giftcertificate-details-hide-label;
+}
+.giftcertificate-details-results-table-row-email-label {
+    @extend .giftcertificate-details-hide-label;
+}
+.giftcertificate-details-results-table-row-originalamount-label {
+    @extend .giftcertificate-details-hide-label;
+}
+.giftcertificate-details-results-table-row-remainingamount-label {
+    @extend .giftcertificate-details-hide-label;
+}
+.giftcertificate-details-results-table-row-action-remaining-button {
+    @extend .giftcertificate-details-hide-label;
+}

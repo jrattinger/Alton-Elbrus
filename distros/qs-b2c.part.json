@@ -1,0 +1,30 @@
+{
+  "id": "qs-b2c",
+  "name": "Quickstart Basic",
+  "dependencies": [
+    "boilerplate",
+    "ss-backinstock",
+    "ss-duplicatecustomermanagement",
+    "ss-guestorderstatus",
+    "ss-infinitescroll",
+    "ss-hashtaggallery",
+    "ss-inventorydisplay",
+    "ss-lookbook",
+    "ss-sizechart",
+    "ss-localizationpatch",
+    "ss-about-us",
+    "ss-contactuslandingpage",
+    "ss-displayproductleadtime",
+    "ss-itembadges",
+    "ss-matrixmultiadd",
+    "ss-giftcertificate",
+    "ss-googlerecaptcha",
+    "ss-blog"
+  ],
+  "modules": {},
+  "tasksConfig": {
+    "ssp-libraries": {
+      "dependencies": []
+    }
+  }
+}

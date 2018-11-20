@@ -1,0 +1,17 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ],
+        "sass": [
+            "Sass/**/*.scss"
+        ],
+        "templates": [
+            "Templates/*.tpl"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/CreditCard@2.4.0/Templates/creditcard_edit_form.tpl": "Templates/creditcard_edit_form.tpl",
+        "suitecommerce/CreditCard@2.4.0/Templates/creditcard_edit_form_securitycode.tpl": "Templates/creditcard_edit_form_securitycode.tpl"
+    }
+}

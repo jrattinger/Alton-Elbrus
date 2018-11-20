@@ -1,0 +1,11 @@
+.giftcertifcate-value-message{
+  @extend .global-views-message;
+}
+.giftcertifcate-value-message-info {
+  @extend .global-views-message-info;
+}
+.giftcertifcate-value-message-icon-info {
+  @extend .fa;
+  @extend %fa-info-circle;
+  margin-right: $sc-base-margin;
+}

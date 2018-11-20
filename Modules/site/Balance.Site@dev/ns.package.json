@@ -1,0 +1,10 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/Balance@2.1.2/JavaScript/Balance.js": "JavaScript/Balance.js"
+    }
+}

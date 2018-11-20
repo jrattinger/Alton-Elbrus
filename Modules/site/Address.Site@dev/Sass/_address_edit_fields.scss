@@ -1,0 +1,58 @@
+.address-edit-fields-row {
+    @extend .row;
+}
+
+.address-edit-fields-group {
+    @extend .col-sm-6;
+    @extend .col-md-6;
+}
+
+.address-edit-fields {
+    width: 100%;
+    margin: 0;
+}
+
+.address-edit-fields-group-label,
+.address-edit-fields-group-input-checkbox {
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #68737a;
+}
+
+.order-wizard-address-module-checkbox {
+    @extend .address-edit-fields-group-label;
+    margin: 10px 0;
+}
+
+.address-edit-fields-group {
+    .global-views-countriesDropdown-group-label, 
+    .global-views-states-group-label{
+        @extend .address-edit-fields-group-label;
+    }
+
+
+    .global-views-countriesDropdown-input-required,
+    .global-views-states-input-required {
+        display: none;
+    }
+
+    .global-views-states-group-select,
+    .global-views-countriesDropdown-select {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+.address-edit-fields-group-input {
+    width: 100%;
+    min-width: auto;
+
+    &.required {
+        border-right: 5px solid darkred;
+        
+        &.not-empty {
+            border-right: 5px solid #394A53;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ],
+        "templates": [
+            "Templates/*"
+        ]
+    },
+    "overrides": {
+        "themes/horizon@2.2.0/overrides/Theme_ProductViews@theme/Templates/qs_product_views_price.tpl": "Templates/qs_product_views_price.tpl"
+    }
+}

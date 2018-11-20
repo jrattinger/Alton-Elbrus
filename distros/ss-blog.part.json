@@ -1,0 +1,78 @@
+{
+  "id": "ss-blog",
+  "name": "Blog",
+  "pdistroVersion": "2.0.0",
+  "dependencies": ["elbrus-base", "ss-efcore", "ss-generalconfig"],
+  "folders": {
+    "modules": "Modules",
+    "distribution": "bin/LocalDistribution",
+    "deploy": "bin/DeployDistribution",
+    "release": "bin/ReleaseDistribution"
+  },
+  "modules": {
+    "efficiencies/Blog": "2.0.1",
+    "efficiencies/BlogCategories": "2.0.0",
+    "efficiencies/BlogItemDetails": "2.0.0",
+    "third_parties_efficiencies/jquery.dateFormat": "1.0"
+  },
+  "tasksConfig": {
+    "javascript": [
+      {
+        "entryPoint": "SC.Shopping.Starter",
+        "dependencies": [
+          "Blog",
+          "BlogCategories",
+          "BlogItemDetails"
+        ],
+        "amdConfig": {
+          "shim": {
+              "jquery.dateFormat": {
+                "deps": [
+                  "jQuery"
+                ]
+              }
+          }
+        }
+      },
+      {
+        "entryPoint": "SC.MyAccount.Starter",
+        "dependencies": [
+        ]
+      },
+      {
+        "entryPoint": "SC.Checkout.Starter",
+        "dependencies": [
+        ]
+      }
+    ],
+    "ssp-libraries": {
+      "dependencies": [
+        "Blog.EntryPoint",
+        "Blog.Categories.EntryPoint",
+        "Blog.ItemDetails.EntryPoint"
+      ]
+    },
+    "sass": {
+      "applications": [
+        {
+          "name": "Shopping",
+          "dependencies": [
+            "Blog",
+            "BlogCategories",
+            "BlogItemDetails"
+          ]
+        },
+        {
+          "name": "MyAccount",
+          "dependencies": [
+          ]
+        },
+        {
+          "name": "Checkout",
+          "dependencies": [
+          ]
+        }
+      ]
+    }
+  }
+}

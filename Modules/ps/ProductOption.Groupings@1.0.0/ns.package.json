@@ -1,0 +1,23 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ],
+        "configuration": [
+            "Configuration/*.json"
+        ],
+        "templates": [
+            "Templates/*"
+        ],
+        "sass": [
+            "Sass/**/*.scss"
+        ],
+        "images": [
+            "Images/*"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/ProductViews@1.0.0/Templates/product_views_option_tile.tpl": "Templates/product_views_option_tile.tpl",
+        "suitecommerce/ProductViews@1.0.0/Templates/product_views_option_text.tpl": "Templates/product_views_option_text.tpl"
+        }
+}

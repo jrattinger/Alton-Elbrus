@@ -1,0 +1,173 @@
+/*
+    © 2016 NetSuite Inc.
+    User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+    provided, however, if you are an authorized user with a NetSuite account or log-in, you
+    may use this code subject to the terms that govern your access and use.
+*/
+
+.blog-browse {
+    @extend .container;
+}
+
+.blog-details-divider-desktop {
+    @extend .product-details-full-divider-desktop;
+}
+
+.blog-browse-breadcrum {
+    @extend .breadcrumb;
+}
+
+.blog-items-collection-view-row {
+    @extend .row;
+}
+
+.blog-item-cell-grid {
+    @extend .item-cell;
+}
+
+.blog-item-cell-grid-quick-view-wrapper {
+    @extend .item-cell-quick-view-wrapper;
+}
+
+.blog-item-cell-grid-quick-view-link {
+    @extend .item-cell-quick-view-link;
+}
+
+.blog-item-cell-grid-image-wrapper {
+    position:relative;
+    text-align:center;
+}
+
+.blog-item-cell-grid-link-image {}
+
+.blog-item-cell-grid-quick-view-icon {}
+
+.blog-item-cell-grid-stock {}
+
+.blog-item-cell-grid-add-to-cart-itemid {}
+
+.blog-item-cell-grid-details {
+    text-align:center;
+}
+
+.blog-item-cell-grid-image {
+    @extend .item-cell-image;
+    width:100%;
+    height:auto;
+}
+
+.blog-item-cell-grid-title {
+    @extend .item-cell-title;
+}
+
+.blog-item-cell-grid-price {
+    @extend .small-price;
+    margin-bottom:$sc-small-margin;
+}
+
+.blog-item-cell-grid-rating {
+    text-align:center;
+    display: inline-block;
+}
+
+.blog-item-cell-grid .item-details-option-color-tiles-container {
+    @extend .color-picker-sm;
+}
+
+.blog-item-cell-grid .item-details-option-color-label {
+    display:none;
+}
+
+.blog-item-cell-grid {
+    .global-views-star-rating-area {
+        margin-bottom:$sc-small-margin;
+    }
+}
+
+.blog-item-cell-grid-add-to-cart-quantity {
+    @extend .input-medium;
+}
+
+.blog-item-cell-grid-add-to-cart-button {
+    @extend .button-primary;
+    @extend .button-medium;
+}
+
+.blog-items-collection-view-cell-span2 {
+    @extend .col-sm-2;
+    @extend .col-xs-6;
+}
+
+.blog-items-collection-view-cell-span3 {
+    @extend .col-sm-3;
+    @extend .col-xs-6;
+}
+
+.blog-items-collection-view-cell-span4 {
+    @extend .col-sm-4;
+    @extend .col-xs-6;
+}
+
+.blog-items-collection-view-cell-span4 {
+    @extend .col-sm-4;
+    @extend .col-xs-6;
+}
+
+.blog-items-collection-view-cell-span5 {
+    @extend .col-sm-5;
+    @extend .col-xs-6;
+}
+
+.blog-items-collection-view-cell-span6 {
+    @extend .col-sm-6;
+    @extend .col-xs-6;
+}
+
+.blog-items-collection-view-cell-span7 {
+    @extend .col-sm-7;
+    @extend .col-xs-12;
+}
+
+.blog-items-collection-view-cell-span8 {
+    @extend .col-sm-8;
+    @extend .col-xs-12;
+}
+
+.blog-items-collection-view-cell-span9 {
+    @extend .col-sm-9;
+    @extend .col-xs-12;
+}
+
+.blog-items-collection-view-cell-span10 {
+    @extend .col-sm-10;
+    @extend .col-xs-12;
+}
+
+.blog-items-collection-view-cell-span11 {
+    @extend .col-sm-11;
+    @extend .col-xs-12;
+}
+
+.blog-items-collection-view-cell-span12 {
+    @extend .col-xs-12;
+}
+
+.blog-button-filter-by{
+  @extend .button-secondary;
+  @extend .button-medium;
+  padding: $sc-base-padding;
+  width: auto;
+  margin-top: $sc-medium-margin;
+
+  @media (min-width: $screen-md-min) {
+      display: none;
+  }
+}
+
+.blog-browse-list-header-filter-blog-icon {
+    @extend .list-header-filter-facets-icon;
+}
+
+.blog-browse-list-header-filter-blog {
+    @extend .list-header-filter-facets;
+}

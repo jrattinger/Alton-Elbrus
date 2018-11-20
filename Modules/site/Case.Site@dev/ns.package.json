@@ -1,0 +1,10 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/Case@2.3.0/JavaScript/Case.js": "JavaScript/Case.js"
+    }
+}

@@ -1,0 +1,280 @@
+.header-main-wrapper {
+
+  background-color: #22334a;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+
+
+  .header-logo-wrapper {
+    left: 50%;
+    top: 5px;
+  }
+
+  .header-logo-image {
+    margin-left: -50%;
+
+
+    @media(max-width: $screen-sm-max){
+      margin-left: 50%;
+    }
+
+  }
+
+  .header-right-menu {
+    //position: relative;
+    top: 5px;
+    z-index: 1;
+  }
+
+  .header-menu-search {
+    position: relative;
+    right: -100px;
+    z-index: 1;
+    top: -16px;
+  }
+
+
+
+  .header-main-nav {
+    min-height:0;
+    height: 0;
+    padding: 0;
+  }
+
+
+
+  .header-menu-level1-anchor {
+    height: 57px;
+    line-height: 57px;
+
+    font-style: normal;
+    font-weight: 300;
+  }
+
+  .header-logo {
+    img {
+
+    }
+  }
+
+}
+
+.header-menu-level1 {
+  float: left;
+  min-height: 57px;
+
+  @media(max-width: $screen-md-max){
+    margin-left: 0;
+    float: left;
+  }
+
+  li {
+    font-size: 11px;
+  }
+
+  /* We removed the dropdown caret and instead put delimeters between the header categories */
+  li + li span {
+    display: inline-block;
+    border-left: 1px $sc-theme-color-tertiary solid;
+    height: 1em;
+    position: absolute;
+    top: 40%;
+    left: -13px;
+  }
+
+}
+
+.header-secondary-wrapper {
+  height: 57px;
+  background-color: #384A53;
+
+  @media (max-width: $screen-sm-max) {
+    height: auto;
+  }
+}
+
+.header-menu-search-link {
+  line-height: 37px;
+}
+
+.header-menu-level1-anchor {
+  height: 57px;
+  line-height: 57px;
+}
+
+/* Center header categories / navigation items to be between the delimeteres */
+.header-menu-level1-anchor, .header-menu-home-anchor, .header-menu-shop-anchor {
+  font-weight:400!important;
+  margin-right: 20px;
+}
+
+.header-content {
+  // width: 15%;
+  float: right;
+
+  @media (max-width: $screen-sm-max) {
+    width: 100%;
+    float: none;
+  }
+}
+
+.header-menu-level2 {
+  float: left;
+  height: auto;
+  display: inline-block;
+
+  font-style: normal;
+  font-weight: 400;
+
+  li {
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: none;
+  }
+}
+
+.header-menu-level2 > li:nth-child(1) {
+    padding-top: 15px;
+}
+
+.header-menu-level2-anchor {
+    padding-bottom: 0;
+}
+
+.header-menu-level-container {
+
+   &>li {
+    margin-left: 13px;
+  }
+
+  .al-sub-about {
+    margin-left: 80px;
+  }
+
+  .al-sub-showrooms{
+    margin-left: 165px;
+  }
+
+}
+
+.header-menu-level-container {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.header-menu-level2 {
+  li {
+    color: #000;
+    background: #fff;
+
+    a {
+      color: #000;
+    }
+  }
+}
+
+.header-profile-menu-myaccount-container {
+  background-color: transparent;
+  opacity: 1;
+
+  font-style: normal;
+  font-weight: 300;
+
+  a {
+    color: #333;
+  }
+}
+
+.header-profile-menu-myaccount-container > li {
+  margin: 40px 0;
+}
+
+.header-menu-profile {
+  .header-menu-myaccount-anchor-level3 {
+    color: #333;
+  }
+}
+
+.breadcrumb-container {
+  clear: both;
+  z-index: 0;
+}
+
+/* This was removed because a thick border was showing up above the breadcrumb of 'MY ACCOUNT' */
+// .global-views-breadcrumb {
+//   margin-top: 3px;
+// }
+
+/* Remove background from mini-cart in header */
+.header-menu-cart-dropdown {
+  background-color: transparent !important;
+}
+
+/* Center right hand side navigation ('Welcome Name', cart, price) */
+@media(min-width: $screen-md-min) {
+  .header-profile-login-link, .header-profile-welcome-link, .header-mini-cart-menu-cart-link, .header-menu-cart-icon, .header-mini-cart-menu-cart-icon {
+    line-height: 60px;
+  }
+}
+
+.breadcrumb-container {
+  z-index: 0;
+}
+
+.myaccount-layout {
+  .myaccount-layout-header {
+    @media(min-width: $screen-md-min) {
+      position: relative;
+    }
+    z-index: 1;
+  }
+
+  .myaccount-layout-breadcrumb {
+    position: relative;
+    z-index: 0;
+  }
+
+  .global-views-breadcrumb-item-active {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .breadcrumb-container {
+    min-height: 107px;
+  }
+}
+
+.header-profile-menu-myaccount-container > li {
+  margin-right: 10px;
+  padding-right: 40px;
+  width: 100%;
+  background: white;
+  padding-bottom: 20px;
+}
+
+.header-main-nav {
+  .header-content {
+    background-color: #384A53;
+  }
+
+  .header-sidebar-toggle{
+    background: #384A53;
+    border: none;
+    .header-sidebar-toggle-icon {
+      color: #1c2127;
+    }
+  }
+
+  .header-menu-searchmobile-link {
+    background: #384A53;
+
+    .header-menu-searchmobile-icon {
+      color: #1c2127;
+    }
+  }
+}

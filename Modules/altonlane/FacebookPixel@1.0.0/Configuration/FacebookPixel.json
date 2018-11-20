@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "facebookpixel",
+        "group": "integrations",
+        "title": "Facebook Pixel",
+        "description": "Facebook Pixel"
+    },
+    "properties": {
+        "tracking.facebookPixel.pixelID": {
+            "group": "integrations",
+            "subtab": "facebookpixel",
+            "type": "string",
+            "title": "Facebook Pixel ID",
+            "description": "Your pixel ID is the unique number assigned to your Facebook pixel. You can use this number in your pixel base code.",
+            "default": ""
+        }
+    }
+}

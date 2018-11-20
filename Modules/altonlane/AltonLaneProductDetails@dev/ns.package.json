@@ -1,0 +1,15 @@
+{
+    "gulp": {
+        "sass": [
+            "Sass/*.scss"
+        ],
+        "templates": [
+            "Templates/*"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/ProductDetails@1.0.0/Templates/product_details_information.tpl":"Templates/product_details_information.tpl",
+        "themes/horizon@2.2.0/overrides/Theme_ProductDetails@theme/Sass/_qs-product-details-information.scss":"Sass/_qs-product-details-information.scss",
+        "themes/horizon@2.2.0/overrides/Theme_ProductDetails@theme/Templates/qs_product_details_quickview.tpl":"Templates/qs_product_details_quickview.tpl"
+    }
+}

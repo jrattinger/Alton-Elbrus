@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "subtab": {
+      "id": "blog",
+      "title": "Blog",
+      "group": "commerceSuiteSolution"
+    },
+    "properties": {
+      "blog.resultsPerPage": {
+        "group": "commerceSuiteSolution",
+        "type": "integer",
+        "subtab": "blog",
+        "title": "Results per page",
+        "default": 8
+      },
+      "blog.dateformat": {
+        "group": "commerceSuiteSolution",
+        "type": "string",
+        "subtab": "blog",
+        "title": "Date Format",
+        "default": "dd/MM/yyyy",
+        "mandatory": true,
+        "description": "This should be base on the format that your account is currently using"
+      },
+      "blog.showarchive": {
+        "group": "commerceSuiteSolution",
+        "type": "boolean",
+        "subtab": "blog",
+        "title": "Show Archives",
+        "default": false
+      }
+    }
+}

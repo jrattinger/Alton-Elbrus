@@ -1,0 +1,11 @@
+{
+    "gulp": {
+        "sass": [
+            "Sass/*.scss"
+        ]
+    },
+    "overrides": {
+        "themes/horizon@2.2.0/overrides/Theme_BaseSassStyles@theme/Sass/atoms/_qs-typography.scss": "Sass/_qs-typography.scss",
+        "themes/horizon@2.2.0/overrides/Theme_BaseSassStyles@theme/Sass/variables/_qs-theme.scss": "Sass/_qs-theme.scss"
+    }
+}

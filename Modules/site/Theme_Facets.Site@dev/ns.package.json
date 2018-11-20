@@ -1,0 +1,22 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ],
+        "sass": [
+            "Sass/*scss"
+        ],
+        "templates": [
+            "Templates/*.tpl"
+        ]
+    },
+    "overrides": {
+        "themes/horizon@2.2.0/overrides/Theme_Facets@theme/Templates/qs_facets_facet_browse.tpl": "Templates/qs_facets_facet_browse.tpl",
+        "themes/horizon@2.2.0/overrides/Theme_Facets@theme/Templates/qs_facets_faceted_navigation.tpl": "Templates/qs_facets_faceted_navigation.tpl",
+        "themes/horizon@2.2.0/overrides/Theme_Facets@theme/Templates/qs_facets_faceted_navigation_item.tpl": "Templates/qs_facets_faceted_navigation_item.tpl",
+        "themes/horizon@2.2.0/overrides/Theme_Facets@theme/Templates/qs_facets_faceted_navigation_item_color.tpl": "Templates/qs_facets_faceted_navigation_item_color.tpl",
+
+        "themes/horizon@2.2.0/overrides/Theme_Facets@theme/Sass/_qs-facets-faceted-navigation-item.scss": "Sass/_al-facets-faceted-navigation-item.scss",
+        "themes/horizon@2.2.0/overrides/Theme_Facets@theme/Sass/_qs-facets-faceted-navigation-item-color.scss": "Sass/_al-facets-faceted-navigation-item-color.scss"
+    }
+}

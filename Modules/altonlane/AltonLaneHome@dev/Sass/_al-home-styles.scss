@@ -1,0 +1,200 @@
+.home-infoblock-layout {
+
+  .home-infoblock {
+    @extend .col-md-12;
+
+    background: transparent;
+    padding: 0;
+
+  }
+
+  .home-infoblock0{
+
+    .home-info-title {
+      color: #22334A;
+      font-size: 28px;
+      text-transform: capitalize;
+    //   font-family: "Americana W01 Bold";
+      font-weight:normal;
+      text-align: center;
+      margin-top: 75px;
+    }
+
+    .home-info-text {
+      color: #22334A;
+      font-size: 18px;
+      text-transform: capitalize;
+    //   font-family: "Americana W01 Bold";
+      font-weight:normal;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .home-info-linktext {
+      padding: 10px 30px;
+      color: #fff;
+      background-color: #22334A;
+      font-size: 11px;
+    }
+
+    .home-info-linktext-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+  }
+
+  .home-infoblock1 {
+
+    background-size: cover;
+
+
+    .home-info-title {
+      color: #fff;
+      font-size: 28px;
+      text-transform: capitalize;
+    //   font-family: "Americana W01 Bold";
+      font-weight: normal;
+      margin-top: 75px;
+      float: right;
+    }
+
+    .home-info-text {
+      color: #fff;
+      font-size: 18px;
+      text-transform: capitalize;
+    //   font-family: "Americana W01 Bold";
+      font-weight:normal;
+      clear: both;
+      float: right;
+      margin-top: 30px;
+      text-align: right;
+      width: 24%;
+      line-height: 24px;
+    }
+
+    .home-info-linktext {
+      padding: 10px 30px;
+      color: #fff;
+      background-color: transparent;
+      font-size: 11px;
+      border: 1px solid #fff;
+    }
+
+    .home-info-linktext-container {
+      margin-top: 30px;
+      text-align: right;
+      float: right;
+      clear: both;
+    }
+
+    .home-infoblock-info {
+      padding-right: 14%;
+    }
+
+
+  }
+
+  .home-infoblock-info {
+    background: transparent;
+    min-width: 100%;
+    width: 100%;
+
+  }
+
+  .home-infoblock-content {
+    display: block;
+  }
+}
+
+.home-infoblock1 {
+
+}
+
+
+.cms-content {
+  h3 {
+    font-size:13px;
+    line-height: 14px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #999;
+    padding: 0 0 15px;
+  }
+
+  .block-container {
+    margin-bottom: 45px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    line-height: 18px;
+    font-size: 13px;
+  }
+
+  .pdp-cms-image-container {
+    text-align: center;
+    img {
+      height: 75px;
+    }
+  }
+
+  .pdp-cms-block-container {
+    width: 15%;
+    display: inline-block;
+    margin: 30px;
+
+    @media (max-width: 768px) {
+      width: 30%;
+    }
+
+    @media (max-width: 425px) {
+      width: 50%;
+    }
+
+
+  }
+
+  .pdp-cms {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 30px 0;
+    margin: 75px 0;
+  }
+
+  .pdp-cms-heading {
+    padding: 0;
+    border: none;
+    margin: 25px 0 10px;
+    color: #949ca2;
+  }
+
+  .pdp-cms-text {
+    margin-bottom: 0;
+    color: #949ca2;
+  }
+
+  .pdp-appointment {
+    text-align: center;
+  }
+
+  .pdp-cms-button {
+    @extend .button-primary;
+    @extend .button-large;
+    padding: 15px 25px;
+    margin-top: 30px;
+  }
+
+  .pdp-appointment-container {
+    width: 50%;
+    margin: 0 auto 50px;
+
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+  }
+}
+
+
+

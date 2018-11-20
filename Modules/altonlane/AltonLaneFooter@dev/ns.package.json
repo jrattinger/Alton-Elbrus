@@ -1,0 +1,20 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ],
+        "templates": [
+            "Templates/*"
+        ],
+        "sass": [
+            "Sass/**/*.scss"
+        ],
+        "configuration": [
+            "Configuration/*.json"
+        ]
+    },
+    "overrides": {
+        "themes/horizon@2.2.0/overrides/Theme_Footer@theme/Templates/qs_footer.tpl": "Templates/al_footer.tpl",
+        "themes/horizon@2.2.0/overrides/Theme_Footer@theme/Templates/qs_footer_simplified.tpl": "Templates/qs_footer_simplified.tpl"
+    }
+}

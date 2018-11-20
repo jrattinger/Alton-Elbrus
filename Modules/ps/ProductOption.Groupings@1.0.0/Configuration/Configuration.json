@@ -1,0 +1,92 @@
+{
+  "type": "object",
+
+  "subtab": {
+    "id": "itemoptionsgroup",
+    "group": "catalog",
+    "title": "Item Options Groups",
+    "description": "This will group the itemoption",
+    "docRef": "scamanila_001"
+  },
+
+  "modifications": [
+
+    {
+      "target": "$.properties[ItemOptions.optionsConfiguration].items.properties",
+      "action": "add",
+      "value": {
+        "groupId": {
+          "type": "string",
+          "title": "Group ID",
+          "description": "Group ID"
+        }
+      }
+    },
+    {
+      "target": "$.properties[ItemOptions.optionsConfiguration].items.properties",
+      "action": "add",
+      "value": {
+        "isParent": {
+          "type": "boolean",
+          "title": "Is Parent",
+          "description": "If this is a parent of the Group"
+        }
+      }
+    },
+    {
+      "target": "$.properties[ItemOptions.optionsConfiguration].items.properties",
+      "action": "add",
+      "value": {
+        "parentTitle": {
+          "type": "string",
+          "title": "Parent Title",
+          "description": "Title of a parent of the Group"
+        }
+      }
+    },
+    {
+      "target": "$.properties[ItemOptions.optionsConfiguration].items.properties",
+      "action": "add",
+      "value": {
+        "maxlength": {
+          "type": "string",
+          "title": "Max Length",
+          "description": "Max length for inputs"
+        }
+      }
+    },
+    {
+      "target": "$.properties[ItemOptions.optionsConfiguration].items.properties",
+      "action": "add",
+      "value": {
+        "helpImages": {
+          "type": "string",
+          "title": "Help Images",
+          "description": "Make sure the help follows the format: internalid|helpimg1.jpg,internalid|helpimg2.jpg"
+        }
+      }
+    },
+    {
+      "target": "$.properties[ItemOptions.optionsConfiguration].items.properties",
+      "action": "add",
+      "value": {
+        "depends": {
+          "type": "string",
+          "title": "Dependant Option",
+          "description": "Make sure the format is option_id=value1,value2"
+        }
+      }
+    },
+    {
+      "target": "$.properties[ItemOptions.optionsConfiguration].items.properties",
+      "action": "add",
+      "value": {
+        "sequence": {
+          "type": "string",
+          "title": "Sequence",
+          "description": "Sequence"
+        }
+      }
+    }
+  ]
+}

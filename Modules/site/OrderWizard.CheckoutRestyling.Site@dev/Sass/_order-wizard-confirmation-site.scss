@@ -1,0 +1,92 @@
+.order-wizard-step-content-main {
+	.order-wizard-confirmation-module {
+		background: transparent;
+		padding: 0;
+		@media (max-width: 991px) {
+			padding: 15px 0;
+		}
+	}
+
+	.order-wizard-confirmation-module-title {
+		background: #efefef;
+		padding: 15px;
+		margin-bottom: 30px;
+		font-size: 16px;
+		font-weight: normal;
+	}
+
+	.order-wizard-confirmation-module-image-container {
+		width: 57%;
+		display:inline-block;
+		vertical-align: middle;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+
+	.order-wizard-confirmation-module-text-container {
+		width: 42%;
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 30px;
+		@media (max-width: 991px) {
+			width:100%;
+			padding: 0;
+			text-align: center;
+		}
+	}
+
+	.order-wizard-confirmation-module-showroom-button {
+		@extend .button-primary;
+		@extend .button-large;
+		padding: 15px 30px!important;
+		margin-top: 40px;
+
+		@media (max-width: 425px) {
+			margin-top: 70px;
+    		width: auto;
+		}
+	}
+
+	.order-wizard-confirmation-module-text {
+		font-style: normal;
+		color: #949ca2;
+		font-size: 14px;
+		line-height: 1.5;
+		text-align: left;
+	}
+
+	.order-wizard-confirmation-module-image {
+		width: 100%;
+	}
+}
+
+@media (max-width: 425px) {
+	.order-wizard-step-content-wrapper {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		/* optional */
+		-webkit-box-align: start;
+		-moz-box-align: start;
+		-ms-flex-align: start;
+		-webkit-align-items: flex-start;
+		align-items: flex-start;
+	}
+	
+	.order-wizard-step-content-secondary {
+		float: none;
+		-webkit-box-ordinal-group: 2;
+		-moz-box-ordinal-group: 2;
+		-ms-flex-order: 2;
+		-webkit-order: 2;
+		order: 2;
+	}	
+} 

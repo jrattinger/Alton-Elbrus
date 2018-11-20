@@ -1,0 +1,97 @@
+{
+  "type": "object",
+  "properties": {
+      "footer.socialMediaLinks": {
+        "group": "layout"
+      , "subtab": "footer"
+      , "type": "array"
+      , "title": "Social media links"
+      , "description": "Simple links to various social media locations, using FontAwesome icons from the 'Brand Icons' or 'Web Applications' sections of http://fontawesome.io/icons/"
+      , "items": {
+          "type": "object"
+        , "properties": {
+            "icon": {
+              "type": "string"
+            , "title": "Icon Name"
+            , "description": ""
+            },
+            "text": {
+              "type": "string"
+            , "title": "Text"
+            , "description": ""
+            },
+            "href": {
+              "type": "string"
+            , "title": "URL"
+            , "description": ""
+            },
+            "datatouchpoint": {
+              "type": "string"
+            , "title": "data-touchpoint"
+            , "description": ""
+            },
+            "datahashtag": {
+              "type": "string"
+            , "title": "data-hashtag"
+            , "description": ""
+            },
+            "datatarget": {
+              "type": "string"
+            , "title": "data-target"
+            , "description": ""
+            }
+          }
+        },
+        "default": [
+          {
+            "icon": "facebook"
+          , "text": "facebook"
+          , "href": "www.facebook.com"
+          , "datatouchpoint": ""
+          , "datahashtag": ""
+          , "datatarget": ""
+          },
+          {
+            "icon": "twitter"
+          , "text": "twitter"
+          , "href": "www.twitter.com"
+          , "datatouchpoint": ""
+          , "datahashtag": ""
+          , "datatarget": ""
+          },
+          {
+            "icon": "pinterest"
+          , "text": "pinterest"
+          , "href": "www.pinterest.com"
+          , "datatouchpoint": ""
+          , "datahashtag": ""
+          , "datatarget": ""
+          },
+          {
+            "icon": "youtube"
+          , "text": "youtube"
+          , "href": "www.youtube.com"
+          , "datatouchpoint": ""
+          , "datahashtag": ""
+          , "datatarget": ""
+          },
+          {
+            "icon": "instagram"
+          , "text": "instagram"
+          , "href": "www.instagram.com"
+          , "datatouchpoint": ""
+          , "datahashtag": ""
+          , "datatarget": ""
+          },
+          {
+            "icon": "google-plus"
+          , "text": "google+"
+          , "href": "plus.google.com"
+          , "datatouchpoint": ""
+          , "datahashtag": ""
+          , "datatarget": ""
+          }
+        ]
+      }
+    }
+}

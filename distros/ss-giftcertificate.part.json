@@ -1,0 +1,84 @@
+{
+  "id": "ss-giftcertificate",
+  "name": "GiftCertificate",
+  "dependencies": ["elbrus-base", "ss-efcore"],
+  "folders": {
+    "modules": "Modules",
+    "distribution": "bin/LocalDistribution",
+    "deploy": "bin/DeployDistribution",
+    "release": "bin/ReleaseDistribution"
+  },
+  "modules": {
+    "efficiencies/GiftCertificateBalance": "1.0.1",
+    "efficiencies/GiftCertificateVariableAmount": "2.0.1"
+  },
+  "tasksConfig": {
+    "javascript": [
+      {
+        "entryPoint": "SC.MyAccount.Starter",
+        "dependencies": [
+          "GiftCertificateBalance"
+        ]
+      },
+      {
+        "entryPoint": "SC.Checkout.Starter",
+        "dependencies": [
+          "GiftCertificateBalance",
+          "GiftCertificateVariableAmount"
+        ]
+      },
+      {
+        "entryPoint": "SC.Shopping.Starter",
+        "dependencies": [
+          "GiftCertificateVariableAmount"
+        ]
+      }
+    ],
+    "ssp-libraries": {
+      "dependencies": [
+        "GiftCertificateBalance.ServiceController"
+      ]
+    },
+    "sass": {
+      "applications": [
+        {
+          "name": "MyAccount",
+          "dependencies": [
+            "GiftCertificateBalance",
+            "GiftCertificateVariableAmount"
+          ]
+        },
+        {
+          "name": "Shopping",
+          "dependencies": [
+            "GiftCertificateVariableAmount"
+          ]
+        }
+      ]
+    },
+    "backend-suitescript": {
+      "amdConfig": {
+        "paths": {
+          "Backbone.Validation": "backbone-validation.server.custom"
+        },
+        "shim": {
+          "Backbone.Validation": {
+            "exports": "Backbone.Validation"
+          }
+        },
+        "findNestedDependencies": true,
+        "map": {
+          "SC.Model": {
+            "Application": "Application.Backend"
+          },
+          "Utils": {
+            "Application": "Application.Backend"
+          },
+          "EF - GCB - SL - GiftCertificateBalance": {
+            "Application": "Application.Backend"
+          }
+        }
+      }
+    }
+  }
+}

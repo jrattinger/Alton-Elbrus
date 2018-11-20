@@ -1,0 +1,50 @@
+.cms-content-merchzone {
+    h3 {
+        text-align: center;
+    }
+    .item-cell {
+        text-align: left;
+        ;
+    }
+}
+
+.item-cell-grid {
+    .btn-expanded {
+        background-color: transparent;
+        color: #999;
+        font-size: 9px;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-align: left;
+        border: none;
+        text-decoration: underline;
+    }
+}
+
+.facet-browse {
+    .cms-content-merchzone {
+        .row-fluid {
+            margin: 0;
+        }
+        @media (max-width: 767px) {
+            .row-fluid {
+                text-align: center;
+            }
+            .span3 {
+                width: 50%;
+                float: left;
+                padding-right: 0px;
+                border-left: 1px solid #fff;
+            }
+        }
+        h5 {
+            padding: 5px 0;
+        }
+    }
+}
+
+.category-info-container {
+    .img-responsive {
+        width: 100%
+    }
+}

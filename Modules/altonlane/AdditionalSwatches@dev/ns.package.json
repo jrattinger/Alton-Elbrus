@@ -1,0 +1,13 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ],
+        "sass": [
+            "Sass/**/*.scss"
+        ]
+    },
+    "overrides": {
+        "efficiencies/InfiniteScroll@1.2.3/JavaScript/Facets.Browse.View.InfiniteScroll.js": "JavaScript/Facets.Browse.View.InfiniteScroll.js"
+    }
+}

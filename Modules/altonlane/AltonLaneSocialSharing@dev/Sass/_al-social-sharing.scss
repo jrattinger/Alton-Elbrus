@@ -1,0 +1,28 @@
+.social-sharing-flyout-content-social-twitter span {
+    display: none;
+}
+
+.social-sharing-flyout-content-social-pinterest span {
+    display: none;
+}
+
+.social-sharing-flyout-content-social-google {
+    display: none;
+}
+
+.footer-content-social-icon{
+    color: #384A53;
+    line-height: 30px;
+    &.icon-instagram {
+        width: 18px;
+    }
+}
+
+.footer-content-social-icon-container {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #6E818B;
+    text-align: center;
+}
+
