@@ -22,6 +22,7 @@ define('ProductViews.Option.View.Site', [
             var retval = fn.apply(this, _.toArray(arguments).slice(1));
             retval.maxLength = this.maxLength;
             retval.configName = this.name;
+            retval.isGiftCard = this.options.isGiftCard;
 
             return retval;
         })

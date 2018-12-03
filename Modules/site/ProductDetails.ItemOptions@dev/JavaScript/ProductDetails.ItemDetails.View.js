@@ -97,7 +97,8 @@ define('ProductDetails.ItemDetails.View', [
             childView: ProductViewsOptionView,
             viewsPerRow: 1,
             childViewOptions: {
-                item: this.model
+                item: this.model,
+                isGiftCard: giftCert === 'GiftCert'
             }
         });
     };

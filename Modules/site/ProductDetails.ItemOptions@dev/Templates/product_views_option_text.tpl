@@ -7,11 +7,17 @@
 
 <div id="{{cartOptionId}}-container" class="product-views-option-text" data-type="option" data-cart-option-id="{{cartOptionId}}" data-item-option-id="{{itemOptionId}}">
 	<div class="{{cartOptionId}}-controls-group" data-validation="control-group">
-		<div class="product-detail-item-options-name">
-			<label class="product-views-option-color-label" for="{{cartOptionId}}">
-				{{configName}}
+		{{#if isGiftCard}}
+			<label class="product-views-option-text-label" for="{{cartOptionId}}">
+				{{label}}
 			</label>
-		</div>
+		{{else}}
+			<div class="product-detail-item-options-name">
+				<label class="product-views-option-color-label" for="{{cartOptionId}}">
+					{{configName}}
+				</label>
+			</div>
+		{{/if}}
 		<div data-validation="control">
 			{{#if isTextArea}}
 				<textarea
