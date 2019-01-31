@@ -144,7 +144,6 @@
 }
 
 .header-menu-level-container {
-
    &>li {
     margin-left: 13px;
   }
@@ -156,7 +155,12 @@
   .al-sub-showrooms{
     margin-left: 165px;
   }
+}
 
+.open {
+  .header-menu-level-container, .header-profile-menu-myaccount-container {
+    height:auto;
+  }
 }
 
 .header-menu-level-container {
